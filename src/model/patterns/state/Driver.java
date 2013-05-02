@@ -1,12 +1,12 @@
-package patterns.state;
+package model.patterns.state;
 
 public class Driver {
 
 	private Page page;
 
-	public static void main(String[] args) {
-		new Driver();
-	}
+	// public static void main(String[] args) {
+	// new Driver();
+	// }
 
 	public Driver() {
 		page = new Page();

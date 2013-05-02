@@ -1,4 +1,4 @@
-package patterns.state;
+package model.patterns.state;
 
 public class BookEnding implements Book {
 
