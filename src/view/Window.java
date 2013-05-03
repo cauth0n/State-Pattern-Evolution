@@ -2,20 +2,19 @@ package view;
 
 import javax.swing.JFrame;
 
-public abstract class Window extends JFrame {
+public abstract class Window extends JFrame{
 
 	protected static JFrame frame;
+	protected Layout layout;
 
 	public Window() {
-
+		super();
 	}
 
 	public static JFrame getInstance() {
 		return frame;
 	}
 
-	public abstract void setLayout(Layout layout);
-
-	public abstract Layout getLayout();
+	public abstract void setUpLayout();
 
 }

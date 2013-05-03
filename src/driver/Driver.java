@@ -1,7 +1,7 @@
 package driver;
 
-import view.DefaultWindow;
-import view.Window;
+import view.DefaultObserver;
+import view.Observer;
 
 public class Driver {
 
@@ -9,7 +9,7 @@ public class Driver {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Window window = new DefaultWindow();
+		Observer obs = new DefaultObserver();
 
 	}
 

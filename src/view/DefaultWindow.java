@@ -5,20 +5,19 @@ import javax.swing.JFrame;
 public class DefaultWindow extends Window {
 
 	public DefaultWindow() {
+		super("Practice GUI");
 		frame = new JFrame("Practice GUI");
-		frame.setSize(1280, 960);
-		frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		frame.setVisible(true);
+		this.setSize(600, 600);
+		this.getContentPane();
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setVisible(true);
+		setUpLayout();
 	}
 
 	@Override
-	public void setLayout(Layout layout) {
-		frame.setLayout(layout);
-
-	}
-	
-	public Layout getLayout(){
-		return new DefaultBorderLayout();
+	public void setUpLayout() {
+		layout = new DefaultBorderLayout();
+		layout.setUpLayout(this);
 	}
 
 }

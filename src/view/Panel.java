@@ -1,5 +1,11 @@
 package view;
 
-public abstract class Panel {
+import javax.swing.JPanel;
+
+public abstract class Panel extends JPanel {
+
+	public Panel() {
+		super();
+	}
 
 }

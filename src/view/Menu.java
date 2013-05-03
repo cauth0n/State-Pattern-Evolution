@@ -1,5 +1,11 @@
 package view;
 
-public abstract class Menu {
+import javax.swing.JMenuBar;
+
+public abstract class Menu extends JMenuBar {
+
+	public Menu() {
+		super();
+	}
 
 }

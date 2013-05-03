@@ -1,7 +1,13 @@
 package view;
 
-import java.awt.LayoutManager;
+import java.awt.BorderLayout;
+import java.awt.Container;
 
-public interface Layout extends LayoutManager {
+public abstract class Layout extends BorderLayout {
+	protected Panel mainPanel;
+	protected Menu menuBar;
+	protected EvolutionScrollBar evolScroll;
+
+	public abstract void setUpLayout(Container c);
 
 }
