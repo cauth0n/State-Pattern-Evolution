@@ -1,8 +1,8 @@
 package view;
 
-import java.awt.Scrollbar;
+import javax.swing.JScrollBar;
 
-public abstract class EvolutionScrollBar extends Scrollbar {
+public abstract class EvolutionScrollBar extends JScrollBar {
 
 	public EvolutionScrollBar() {
 		super();

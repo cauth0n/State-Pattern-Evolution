@@ -6,6 +6,9 @@ public abstract class Menu extends JMenuBar {
 
 	public Menu() {
 		super();
+
 	}
+
+	public abstract void buildMenu();
 
 }

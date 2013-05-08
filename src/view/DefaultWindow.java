@@ -4,9 +4,10 @@ import javax.swing.JFrame;
 
 public class DefaultWindow extends Window {
 
+	private final static String windowName = "Practice GUI";
+
 	public DefaultWindow() {
-		super("Practice GUI");
-		frame = new JFrame("Practice GUI");
+		super(windowName);
 		this.setSize(600, 600);
 		this.getContentPane();
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
